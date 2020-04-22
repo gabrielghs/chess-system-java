@@ -1,6 +1,6 @@
 package jogotabuleiro;
 
-public abstract class Peca {
+public abstract class Peca{
 
 	protected Posicao posicao;
 	private Tabuleiro tabuleiro;
