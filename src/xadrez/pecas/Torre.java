@@ -21,7 +21,7 @@ public class Torre extends PecaXadrez{
 		boolean[][] mat = new boolean[getTabuleiro().getLinhas()][getTabuleiro().getColunas()];
 		
 		Posicao p = new Posicao(0, 0);
-		
+
 		//Acima
 		p.definirValores(posicao.getLinha() - 1, posicao.getColuna());
 		while(getTabuleiro().posicaoExistente(p) && !getTabuleiro().existeUmaPeca(p)) {
@@ -58,6 +58,9 @@ public class Torre extends PecaXadrez{
 		if(getTabuleiro().posicaoExistente(p) && existePecaOponente(p)) {
 			mat[p.getLinha()][p.getColuna()] = true;
 		}
+		
+		
+		
 		
 		return mat;
 	}
