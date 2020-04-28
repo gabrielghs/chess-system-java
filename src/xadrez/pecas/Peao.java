@@ -1,6 +1,5 @@
 package xadrez.pecas;
 
-import jogotabuleiro.Peca;
 import jogotabuleiro.Posicao;
 import jogotabuleiro.Tabuleiro;
 import xadrez.Cor;
@@ -76,7 +75,7 @@ public class Peao extends PecaXadrez {
 				mat[p.getLinha()][p.getColuna()] = true;
 			}
 			//DIREITO INFERIOR
-			p.definirValores(posicao.getLinha() + 1 , p.getColuna() + 1);
+			p.definirValores(posicao.getLinha() + 1 , p.getColuna() + 2);
 			if(getTabuleiro().posicaoExistente(p) && existePecaOponente(p)) {
 				mat[p.getLinha()][p.getColuna()] = true;
 			}

@@ -41,6 +41,11 @@ public class Programa {
 					capturada.add(pecaCapturada);
 				}
 				
+				if(partidaXadrez.getPromoted() != null) {
+					System.out.print("Digite a peca para ser promovida (B/C/T/A): ");
+					String tipo = sc.nextLine();
+					partidaXadrez.replacePromotedPice(tipo);
+				}
 				
 			}
 			catch(XadrezException e) {
